@@ -1,0 +1,19 @@
+$soft-black: #1a1a1a;
+$yellow-green:#9a9c00;
+
+.nav-class {
+    width: 90vw;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.2rem solid $yellow-green;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    
+
+    .nav-link{
+        font-size: 1.2rem;
+        font-family: 'Lexend Peta', sans-serif;
+    
+    }
+}

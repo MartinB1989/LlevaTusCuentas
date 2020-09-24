@@ -1,0 +1,16 @@
+body {
+  margin: auto;
+  background-color: #1a1a1a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9a9c00;
+}
+/*# sourceMappingURL=general.css.map */

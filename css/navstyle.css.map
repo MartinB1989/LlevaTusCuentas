@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,QAAQ;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,aAAa,EAAE,MAAM,CAAC,KAAK,CAPjB,OAAO;EAQjB,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;CAQlB;;AAfD,AAUI,UAVM,CAUN,SAAS,CAAA;EACL,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,yBAAyB;CAEzC",
+    "sources": [
+        "navstyle.scss"
+    ],
+    "names": [],
+    "file": "navstyle.css"
+}

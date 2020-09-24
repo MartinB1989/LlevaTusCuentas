@@ -1,0 +1,93 @@
+body {
+  margin: auto;
+  background-color: #1a1a1a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9a9c00;
+}
+
+.nav-class {
+  width: 90vw;
+  margin: 5vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 0.2rem solid #9a9c00;
+  border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-class .nav-link {
+  font-size: 1.2rem;
+  font-family: 'Lexend Peta', sans-serif;
+}
+
+.botones {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ingreso, .gasto {
+  margin: 0 10px;
+  color: #000;
+  background-color: #017201;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.gasto {
+  background-color: #8b0000;
+}
+
+.ingreso:hover {
+  background-color: #00c300;
+  color: whitesmoke;
+}
+
+.gasto:hover {
+  background-color: #d80000;
+  color: whitesmoke;
+}
+
+.box-titulos, .aderidos {
+  margin: auto;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid whitesmoke;
+}
+
+.box-titulos .titulos, .aderidos .titulos {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
+/*# sourceMappingURL=cuenta.css.map */

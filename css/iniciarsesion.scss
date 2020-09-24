@@ -1,0 +1,64 @@
+@import "navstyle.scss";
+@import "general.scss";
+
+.form-box{
+    margin: 25vh auto;
+    width: 24rem;
+    height: 16rem;
+    background-color:$soft-black;
+    border:0.25rem solid $yellow-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    // flex-direction: column;
+
+    .input{
+        width: 8rem;
+        height: 1.5rem;
+    }
+    
+}
+
+
+
+.title-login{
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    font-family: 'Lexend Peta', sans-serif;
+    color: whitesmoke;
+}
+
+.label-font{
+    color: whitesmoke;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button{
+    // display: block;
+    margin: 0.25rem 0;
+    background-color:$yellow-green;
+    width:4rem ;
+    height: 2rem;
+}
+
+.registrate{
+
+    font-family:'Raleway', sans-serif ;
+}
+
+// .respuesta{
+//     margin: auto;
+// }
+.fetch{
+    margin: 1rem auto;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family:'Raleway', sans-serif ;
+
+}
+
+.msg-error{
+    color: #bb0000;
+}

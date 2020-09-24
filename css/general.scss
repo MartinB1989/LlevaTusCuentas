@@ -1,0 +1,20 @@
+$soft-black: #1a1a1a;
+$yellow-green:#9a9c00;
+
+body{
+    margin: auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+    background-color: $soft-black;
+    box-sizing: border-box;
+    
+}
+
+a{
+    color: whitesmoke;
+    text-decoration:none;
+}
+a:hover{
+    color: $yellow-green;
+}

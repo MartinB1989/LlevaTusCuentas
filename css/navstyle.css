@@ -1,0 +1,20 @@
+.nav-class {
+  width: 90vw;
+  margin: 5vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 0.2rem solid #9a9c00;
+  border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-class .nav-link {
+  font-size: 1.2rem;
+  font-family: 'Lexend Peta', sans-serif;
+}
+/*# sourceMappingURL=navstyle.css.map */
