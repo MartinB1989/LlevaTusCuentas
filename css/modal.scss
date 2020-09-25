@@ -1,0 +1,46 @@
+.modal-container{
+    margin: 0;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .modal{
+        // margin: auto;
+        background-color: whitesmoke;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+     .btn-add,.btn-cancel{
+        
+        padding: 0.5rem 1rem;
+        background-color: #017201;
+
+     }
+       
+     .btn-cancel{
+         background-color: #8b0000;
+     }
+     .btn-add:hover{
+         background-color: #00c300;
+         color: white;
+     }
+     .btn-cancel:hover{
+         background-color: #d80000;
+         color:white;
+     }
+    }
+}
+
+.no-ver{
+    display: none;
+}
+

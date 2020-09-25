@@ -34,6 +34,63 @@ a:hover {
   font-family: 'Lexend Peta', sans-serif;
 }
 
+.modal-container {
+  margin: 0;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container .modal {
+  background-color: whitesmoke;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container .modal .btn-add, .modal-container .modal .btn-cancel {
+  padding: 0.5rem 1rem;
+  background-color: #017201;
+}
+
+.modal-container .modal .btn-cancel {
+  background-color: #8b0000;
+}
+
+.modal-container .modal .btn-add:hover {
+  background-color: #00c300;
+  color: white;
+}
+
+.modal-container .modal .btn-cancel:hover {
+  background-color: #d80000;
+  color: white;
+}
+
+.no-ver {
+  display: none;
+}
+
 .botones {
   margin: auto;
   margin-bottom: 1.5rem;

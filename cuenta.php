@@ -25,7 +25,16 @@
             <a href="php/logout.php" class="nav-link">Cerrar Sesión</a>
             
         </nav>
-
+        <div class="modal-container no-ver" id="modal-container">
+            <div class="modal">  
+                <form action="" id="form-modal" data-operation="">
+                    <input type="text" max-lenght="100" placeholder="detalle"><br><br>
+                    <input type="number" name="monto" id="monto" placeholder="monto" min=0><br><br>
+                    <input type="button" value="Agregar" class="btn-add">
+                    <input type="button" value="Cancel" class="btn-cancel">
+                </form>
+            </div>
+        </div>
         <div class="botones">
             <a href="#" class="ingreso" id="ingreso">Ingreso</a>
             <a href="#" class="gasto" id="gasto">Gasto</a>
@@ -40,7 +49,7 @@
 
 
         </main>
-
+    <script src="js/script.js" type="module"></script>
     </div>
 </body>
 </html>
