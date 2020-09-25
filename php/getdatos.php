@@ -13,7 +13,6 @@ $conexion = mysqli_connect($bdhost,$bdusuario,$bdcontra,$bdnombre);
 $consulta = "SELECT nrodato,fecha,monto,detalle,iduser FROM datauserlist WHERE iduser = 1";
 $resultados = mysqli_query($conexion, $consulta);
 
-while($registro = mysqli_fetch_array($resultados)){
+while($registro = mysqli_fetch_row($resultados)){
     echo json_encode($registro);
 }
-?>

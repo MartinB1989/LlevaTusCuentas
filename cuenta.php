@@ -46,7 +46,11 @@
                 <div class="titulos">Monto</div>
                 <div class="titulos">Fecha</div>
             </section>
-
+            <!-- <template id="template-row">
+                <div class="">Detalle</div>
+                <div class="">Monto</div>
+                <div class="">Fecha</div>
+            </template> -->
 
         </main>
     <script src="js/script.js" type="module"></script>
