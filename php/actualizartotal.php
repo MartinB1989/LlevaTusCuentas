@@ -22,6 +22,7 @@ session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]===true){
     
     $id_user = $_SESSION["id"];
+    $total = $_POST["total"];
     
 
     require_once "dbconec.php";
@@ -29,13 +30,15 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]===true){
     $conexion = mysqli_connect($bdhost,$bdusuario,$bdcontra,$bdnombre);
     $verificacion = "SELECT * FROM `totalencuenta` WHERE iduser = $id_user";
     $consulta = mysqli_query($conexion,$verificacion);
-    ;
+
 
     if(existenciaDeUsuario("iduser",$id_user,$consulta)){
 
-        $actualizar = "UPDATE `totalencuenta` SET `total`= WHERE iduser = $id_user ";
+        $actualizar = "UPDATE `totalencuenta` SET `total`= '$total' WHERE iduser = '$id_user' ";
+        mysqli_query($conexion,$actualizar);
+        echo json_encode($total);
     }else{
-        $guardar = "INSERT INTO `totalencuenta`(`iduser`, `total`) VALUES ([value-1],[value-2])";
+        $guardar = "INSERT INTO `totalencuenta`(`iduser`, `total`) VALUES ($id_user,$total)";
         mysqli_query($conexion,$guardar);
     }
 

@@ -15,4 +15,5 @@ const cancelModal=(selector,ventana,clase)=>{
     })
 }
 
+
 export {appearModal,cancelModal}

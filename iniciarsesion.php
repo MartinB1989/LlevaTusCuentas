@@ -24,7 +24,7 @@
                 <span class="msg-error" style="color: #af0000"><?php echo $user_error; ?></span>
                 <br>
                 <label class="label-font" for="contrasenia">Contraseña</label>
-                <input class="input" type="password" name="contrasenia" maxlength="12" minlength="4" requiered="required" >
+                <input class="input" type="password" name="contrasenia" maxlength="12" minlength="4" required="required" >
                 <span class="msg-error" style="color: #af0000"><?php echo $pass_error; ?></span>
 
                 <button class="button" type="submit">Entrar</button>

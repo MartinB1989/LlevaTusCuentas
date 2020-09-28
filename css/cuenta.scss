@@ -8,6 +8,13 @@
     display: flex;
     justify-content: flex-end;;
     // align-items:;
+    
+    .total{
+        font-size: 1.5rem;
+        font-family:'Raleway', sans-serif;
+        color:whitesmoke;
+        align-self: flex-end;
+}
 }
 
 .ingreso, .gasto{
@@ -34,7 +41,7 @@
     background-color:#d80000 ;
     color:whitesmoke;
 }
-.box-titulos, .aderidos{
+.box-titulos{
 
     margin: auto;
     width: 90vw;
@@ -53,6 +60,25 @@
     }
 }
 
-// .ico{
-//     font-size: 1.2rem;
-// }
+.i{
+    background-color: #00ad00;
+}
+
+.g{
+    background-color: #ff3d3d;
+}
+
+.acciones {
+
+    .btn-editar{
+        background-color: #0000be;
+        color: whitesmoke;
+        font-family:'Raleway', sans-serif;
+    }
+
+    .btn-eliminar{
+        background-color: rgb(185, 0, 0);
+        color:whitesmoke;
+        font-family:'Raleway', sans-serif;
+    }
+}

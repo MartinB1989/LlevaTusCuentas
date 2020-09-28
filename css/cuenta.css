@@ -103,6 +103,14 @@ a:hover {
           justify-content: flex-end;
 }
 
+.botones .total {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: whitesmoke;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .ingreso, .gasto {
   margin: 0 10px;
   color: #000;
@@ -127,7 +135,7 @@ a:hover {
   color: whitesmoke;
 }
 
-.box-titulos, .aderidos {
+.box-titulos {
   margin: auto;
   width: 90vw;
   display: -webkit-box;
@@ -142,8 +150,28 @@ a:hover {
   border: 1px solid whitesmoke;
 }
 
-.box-titulos .titulos, .aderidos .titulos {
+.box-titulos .titulos {
   font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
+
+.i {
+  background-color: #00ad00;
+}
+
+.g {
+  background-color: #ff3d3d;
+}
+
+.acciones .btn-editar {
+  background-color: #0000be;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
+
+.acciones .btn-eliminar {
+  background-color: #b90000;
   color: whitesmoke;
   font-family: 'Raleway', sans-serif;
 }
