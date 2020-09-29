@@ -68,7 +68,7 @@ a:hover {
           align-items: center;
 }
 
-.modal-container .modal .btn-add, .modal-container .modal .btn-cancel {
+.modal-container .modal .btn-add, .modal-container .modal .btn-cancel, .modal-container .modal .btn-edit {
   padding: 0.5rem 1rem;
   background-color: #017201;
 }
@@ -84,6 +84,11 @@ a:hover {
 
 .modal-container .modal .btn-cancel:hover {
   background-color: #d80000;
+  color: white;
+}
+
+.modal-container .modal .btn-edit:hover {
+  background-color: #00c300;
   color: white;
 }
 

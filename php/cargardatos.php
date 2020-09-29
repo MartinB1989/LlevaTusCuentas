@@ -19,6 +19,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]===true){
     $guardar = "INSERT INTO `datauserlist`(`fecha`, `monto`, `detalle`, `iduser`,`tipodeentrada`) VALUES ('$fecha','$monto','$detalle','$id_user','$tipo')";
     $result = mysqli_query($conexion,$guardar);
 
+    
+    echo json_encode($result);
+    
 
 
 }

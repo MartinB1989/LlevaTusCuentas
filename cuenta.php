@@ -32,7 +32,7 @@
                 <form action="" id="form-modal" data-operation="">
                     <input type="text" name="detalle" max-lenght="100" placeholder="detalle"><br><br>
                     <input type="number" name="monto" id="monto" placeholder="monto" min=0 required="required"><br><br>
-                    <input type="submit" value="Agregar" class="btn-add">
+                    <input type="button" value="Aceptar" class="btn-add">
                     <input type="button" value="Cancel" class="btn-cancel">
                 </form>
             </div>
@@ -57,8 +57,9 @@
                     <div class="titulos" id="amount"></div>
                     <div class="titulos" id="date"></div>
                     <form id="acciones" class="acciones">
-                        <input class="btn-editar"type="button" value="Editar">
-                        <input class="btn-eliminar"type="button" value="Eliminar">
+                        <input class="btn-editar" type="button" value="Editar">
+                        <input class="btn-eliminar" type="button" value="Eliminar">
+                        <input class="id-prod" type="hidden" name="producto" value="" >
                     </form>
                 </section>
             </template>
