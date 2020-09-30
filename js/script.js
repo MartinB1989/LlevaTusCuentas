@@ -38,7 +38,7 @@ $template = document.getElementById("template-row").content,
 $fragment = document.createDocumentFragment(),
 $tipo ="",
 $total=document.querySelector("#total"),
-$btnadd = document.querySelector(".btn-add");
+$btnadd = document.querySelector(".btn-add"),$uno,$dos,$id_prod,$det,$mon,$padre,iog;
 
 
 
@@ -160,12 +160,12 @@ document.addEventListener("DOMContentLoaded", e =>{
         //----------------------BOTÓN "EDITAR"-----------------
         if(e.target.matches(".btn-editar")){
             $btnadd.classList.replace("btn-add","btn-edit")
-            let $uno = e.target.parentElement.parentElement.children[0].textContent,
-            $dos = eliminarExp(e.target.parentElement.parentElement.children[1].textContent),
-            $id_prod = e.target.parentElement.children[2].value,
-            $det=e.target.parentElement.parentElement.children[0],
-            $mon=e.target.parentElement.parentElement.children[1],
-            $padre = e.target.parentElement.parentElement,
+            $uno = e.target.parentElement.parentElement.children[0].textContent;
+            $dos = eliminarExp(e.target.parentElement.parentElement.children[1].textContent);
+            $id_prod = e.target.parentElement.children[2].value;
+            $det=e.target.parentElement.parentElement.children[0];
+            $mon=e.target.parentElement.parentElement.children[1];
+            $padre = e.target.parentElement.parentElement;
             iog = $padre.getAttribute("class");
             
             $modal.classList.remove("no-ver")
