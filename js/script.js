@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", e =>{
     //------------------EVENTO CLICK-------------------------
 
     document.addEventListener("click", e =>{
-        //----------------BOTÓN "ACEPTAR" EN VENTANA MODAL------------------
+        //----------------BOTÓN "ACEPTAR" EN VENTANA MODAL PARA "INGRESAR"------------------
         if(e.target.matches(".btn-add")){
             
             if(validarTexto(document.querySelector("#monto").value)){
@@ -164,7 +164,9 @@ document.addEventListener("DOMContentLoaded", e =>{
             $dos = eliminarExp(e.target.parentElement.parentElement.children[1].textContent),
             $id_prod = e.target.parentElement.children[2].value,
             $det=e.target.parentElement.parentElement.children[0],
-            $mon=e.target.parentElement.parentElement.children[1];
+            $mon=e.target.parentElement.parentElement.children[1],
+            $padre = e.target.parentElement.parentElement,
+            iog = $padre.getAttribute("class");
             
             $modal.classList.remove("no-ver")
             $form.setAttribute("data-operation","edit")
@@ -181,8 +183,22 @@ document.addEventListener("DOMContentLoaded", e =>{
                         $mon.textContent=`$ ${$form.monto.value}`
                         
                         $modal.classList.add("no-ver")
+                        let diferencia = parseFloat($dos)-parseFloat($form.monto.value)
+                        console.log(diferencia)
+                        let resta;
+                        if(iog=="box-titulos i"){
+                            resta =parseFloat($total.textContent)-(diferencia)
+                            console.log(resta)
+                         }
+                         if(iog=="box-titulos g"){
+                             resta =parseFloat($total.textContent)+(diferencia)
+                             console.log(resta)
+                         }
+
+                        $total.textContent = resta
                         let datos = new FormData($form)
                         datos.append("idprod",$id_prod)
+                        datos.append("total",resta)
                         fetch("./php/editar.php",{
                             method:"POST",
                             body: datos
@@ -206,18 +222,31 @@ document.addEventListener("DOMContentLoaded", e =>{
         if(e.target.matches(".btn-eliminar")){
             let $confirmar = confirm("¿Esta seguro que deseas eliminar este registro?"),
             $id_prod_2 = e.target.parentElement.children[2].value,
-            $padre = e.target.parentElement.parentElement;
+            $padre = e.target.parentElement.parentElement,
+            iog = $padre.getAttribute("class"),
+            resta,
+            valortodel = eliminarExp(e.target.parentElement.parentElement.children[1].textContent);
+            
         
+            if(iog=="box-titulos i"){
+               resta =parseFloat($total.textContent)-parseFloat(valortodel)
+            }
+            if(iog=="box-titulos g"){
+                resta =parseFloat($total.textContent)+parseFloat(valortodel)
+            }
             if($confirmar){
                 
                 let $enviar = new FormData()
                 $enviar.append("idproducto",$id_prod_2)
+                $enviar.append("total",resta)
                 fetch("./php/eliminar.php",{
                     method:"POST",
                     body:$enviar
                 })
                 .then(()=>{
+
                     $main.removeChild($padre)
+                    $total.textContent = resta
                 })
             
             }
