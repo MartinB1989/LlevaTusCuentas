@@ -20,7 +20,6 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]===true){
     $result = mysqli_query($conexion,$guardar);
 
     
-    echo json_encode($result);
     
 
 

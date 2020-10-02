@@ -1,5 +1,6 @@
 body {
   margin: auto;
+  width: 100vw;
   background-color: #1a1a1a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,6 +33,12 @@ a:hover {
 .nav-class .nav-link {
   font-size: 1.2rem;
   font-family: 'Lexend Peta', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+  .nav-class .nav-link {
+    font-size: 0.8rem;
+  }
 }
 
 .modal-container {
@@ -100,12 +107,10 @@ a:hover {
   margin: auto;
   margin-bottom: 1.5rem;
   width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 20% 20%;
+      grid-template-columns: 60% 20% 20%;
 }
 
 .botones .total {
@@ -113,11 +118,21 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   color: whitesmoke;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .ingreso, .gasto {
   margin: 0 10px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  text-align: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
   color: #000;
   background-color: #017201;
   padding: 10px 20px;
@@ -128,6 +143,8 @@ a:hover {
 
 .gasto {
   background-color: #8b0000;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .ingreso:hover {
@@ -143,19 +160,16 @@ a:hover {
 .box-titulos {
   margin: auto;
   width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   border: 1px solid whitesmoke;
+  border-radius: 5px;
 }
 
 .box-titulos .titulos {
+  text-align: center;
   font-size: 1.5rem;
   color: whitesmoke;
   font-family: 'Raleway', sans-serif;
@@ -169,15 +183,41 @@ a:hover {
   background-color: #ff3d3d;
 }
 
+.acciones {
+  text-align: center;
+}
+
 .acciones .btn-editar {
-  background-color: #0000be;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #2a2aff;
   color: whitesmoke;
   font-family: 'Raleway', sans-serif;
+  border-radius: 1rem;
 }
 
 .acciones .btn-eliminar {
-  background-color: #b90000;
+  font-size: 1.1rem;
+  background-color: #ff0000;
   color: whitesmoke;
   font-family: 'Raleway', sans-serif;
+  border-radius: 1rem;
+}
+
+.acciones .btn-editar:hover, .acciones .btn-eliminar:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .botones .total {
+    font-size: 1rem;
+  }
+  .ingreso, .gasto {
+    font-size: 0.8rem;
+  }
+  .box-titulos .titulos {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=cuenta.css.map */

@@ -18,8 +18,15 @@
   font-family: 'Lexend Peta', sans-serif;
 }
 
+@media screen and (max-width: 720px) {
+  .nav-class .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
 body {
   margin: auto;
+  width: 100vw;
   background-color: #1a1a1a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -90,5 +97,15 @@ a:hover {
 
 .msg-error {
   color: #bb0000;
+}
+
+@media screen and (max-width: 720px) {
+  .form-box {
+    width: 20rem;
+  }
+  .title-login {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=iniciarsesion.css.map */

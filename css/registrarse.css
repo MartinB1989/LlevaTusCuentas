@@ -31,4 +31,13 @@
 .iniciarsesionluegoderegistrarse:hover {
   background-color: #000;
 }
+
+@media screen and (max-width: 720px) {
+  .form-box {
+    width: 20rem;
+  }
+  .reg {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=registrarse.css.map */

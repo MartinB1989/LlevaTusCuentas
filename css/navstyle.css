@@ -17,4 +17,10 @@
   font-size: 1.2rem;
   font-family: 'Lexend Peta', sans-serif;
 }
+
+@media screen and (max-width: 720px) {
+  .nav-class .nav-link {
+    font-size: 0.8rem;
+  }
+}
 /*# sourceMappingURL=navstyle.css.map */

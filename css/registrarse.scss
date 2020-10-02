@@ -35,3 +35,12 @@ $yellow-green:#9a9c00;
 //     font-family:'Raleway', sans-serif ;
 
 // }
+
+@media screen and (max-width: 720px){
+  .form-box{
+    width: 20rem;
+  }
+  .reg{
+    font-size: 1.2rem;
+  }
+}

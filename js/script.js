@@ -113,8 +113,7 @@ document.addEventListener("DOMContentLoaded", e =>{
                     method:"POST",
                     body:data
                 })
-                .then(res => res.json())
-                .then(json => console.log(json))
+                
                
                 // let $det = $form.children[0].value,
                 //     $mont = $form.children[3].value;
@@ -122,8 +121,8 @@ document.addEventListener("DOMContentLoaded", e =>{
                 fetch("./php/actualizartotal.php",{
                 method:"POST",
                 body:all})
-                .then(res=> res.json())
-                .then(json =>{
+                // .then(res=> res.json())
+                .then(() =>{
                     location.reload();
 
                     // $total.textContent = json

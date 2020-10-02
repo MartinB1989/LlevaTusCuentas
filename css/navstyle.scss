@@ -17,3 +17,11 @@ $yellow-green:#9a9c00;
     
     }
 }
+
+@media screen and (max-width: 720px){
+    
+    .nav-class .nav-link{
+        font-size:0.8rem;
+        
+    }
+}

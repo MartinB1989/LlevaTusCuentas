@@ -62,3 +62,20 @@
 .msg-error{
     color: #bb0000;
 }
+
+@media screen and (max-width: 720px){
+    
+    .form-box{
+       
+        width: 20rem;
+       
+       
+    }
+    .title-login{
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+       
+    }
+
+    
+}

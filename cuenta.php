@@ -39,7 +39,7 @@
         </div>
         <!-- BOTONES DE AGREGAR Y GASTO -->
         <div class="botones">
-            <div class="total">Total: $<span id="total">0000</span></div>
+            <div class="total">Total: $<span id="total">0</span></div>
             <a href="#" class="ingreso" id="ingreso">Ingreso</a>
             <a href="#" class="gasto" id="gasto">Gasto</a>
         </div>
@@ -53,12 +53,12 @@
             </section>
             <template id="template-row">
                 <section class="box-titulos" id="box-titulos">
-                    <div class="titulos" id="detail"></div>
+                    <div class="titulos" id="detail">&#x2692;</div>
                     <div class="titulos" id="amount"></div>
                     <div class="titulos" id="date"></div>
                     <form id="acciones" class="acciones">
-                        <input class="btn-editar" type="button" value="Editar">
-                        <input class="btn-eliminar" type="button" value="Eliminar">
+                        <input class="btn-editar" type="button" value="✎">
+                        <input class="btn-eliminar" type="button" value="✂">
                         <input class="id-prod" type="hidden" name="producto" value="" >
                     </form>
                 </section>
