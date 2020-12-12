@@ -3,7 +3,7 @@
     session_start();
 
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"]!== true){
-        header("location: iniciarsesion.php");
+        header("location: index.php");
         exit;
     }
 ?>
@@ -21,7 +21,7 @@
     <div class="contenedor-principal">
         <!-- HEADER -->
         <nav class="nav-class">
-            <a href="iniciarsesion.php" class="nav-link">Inicio</a>
+            <a href="index.php" class="nav-link">Inicio</a>
             <a href="#" class="nav-link"><span class="ico">👤</span><?php echo $_SESSION["usuario"]?></a>
             <a href="php/logout.php" class="nav-link">Cerrar Sesión</a>
             

@@ -19,7 +19,7 @@ formulario.addEventListener('submit', e =>{
             
         }
         else{
-            respuesta.innerHTML = '<p class="fetch">El usuario ha sido creado, <a href ="iniciarsesion.php" class="iniciarsesionluegoderegistrarse">Inicia Sesión<a/></p>'
+            respuesta.innerHTML = '<p class="fetch">El usuario ha sido creado, <a href ="index.php" class="iniciarsesionluegoderegistrarse">Inicia Sesión<a/></p>'
            }
 
     })

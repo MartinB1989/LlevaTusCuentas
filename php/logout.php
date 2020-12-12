@@ -6,7 +6,7 @@
 
     session_destroy();
 
-    header("location: ../iniciarsesion.php");
+    header("location: ../index.php");
 
     exit;
 ?>
